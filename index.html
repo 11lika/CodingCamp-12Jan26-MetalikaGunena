@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Latihan - Metalika Gunena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="deskripsi">
+            <h2>Nama Brand/Logo</h2>
+            <p>Ini adalah teks yang digunakan untuk deskripsi atau dsb.</p>
+        </div>
+        <ul>
+            <li><a href="#home" data-key="nav-home">Home</a></li>
+            <li><a href="#profile" data-key="nav-profile">Our Profile</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#message" data-key="nav-message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header id="home" class="hero">
+            <h1 id="welcome-speech"><span data-key="hi"><strong>Hi</strong></span> <strong><span
+                        id="user-name"></span></strong></span>, <span data-key="welcome"><strong>Welcome To
+                        Website</strong></span></h1>
+            <p data-key="hero-sub">This is my first practice website.</p>
+            <div class="hero-banner">1366x578 (Banner)</div>
+        </header>
+
+        <section id="profile" class="section-padding">
+            <h2 data-key="nav-profile"><strong>Our Profile</strong></h2>
+            <div class="profile-content">
+                <h3 data-key="about-title"><strong>About the Company</strong></h3>
+                <p data-key="about-desc"><i>We are a technology company focused on developing innovative web
+                        solutions.</i></p>
+                <div class="vision-mission">
+                    <div class="card">
+                        <h4 data-key="vision"><strong><br>Vision</strong></h4>
+                        <p data-key="vision-desc"><i>To be the best learning platform through direct practice.</i></p>
+                    </div>
+                    <div class="card">
+                        <h4 data-key="mission"><strong><br>Mission</strong></h4>
+                        <p data-key="mission-desc"><i>Endless innovation to provide the best code quality.</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="headquarters section-padding">
+            <h2 data-key="hq-title"><strong>Our Headquarter</strong></h2>
+            <div class="hq-container">
+                <div class="hq-item">
+                    <div class="circle"></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle"></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="hq-item">
+                    <div class="circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message" class="message-us section-padding">
+            <div class="section-header">
+                <h2 data-key="nav-message"><strong>Message Us</strong></h2>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="messageForm">
+                    <div class="form-group"><label data-key="form-name">Name</label><input type="text" id="input-name"
+                            required></div>
+                    <div class="form-group"><label data-key="form-birth">Birthday</label><input type="date"
+                            id="input-birth" required></div>
+                    <div class="form-group">
+                        <label data-key="form-gender">Gender</label>
+                        <div class="radio-group">
+                            <input type="radio" name="gender" value="Male" checked> <span data-key="male">Male</span>
+                            <input type="radio" name="gender" value="Female"> <span data-key="female">Female</span>
+                        </div>
+                    </div>
+                    <div class="form-group"><label data-key="form-msg">Message</label><textarea id="input-msg"
+                            required></textarea></div>
+                    <button type="submit" id="submit-btn" data-key="submit">Submit</button>
+                </form>
+
+                <div class="result-box">
+                    <div class="res-row"><strong>Current time</strong><span>:</span><span id="res-time"></span></div>
+                    <br>
+                    <div class="res-row"><strong>Name</strong><span>:</span><span id="res-name"></span></div>
+                    <div class="res-row"><strong>Birthday</strong><span>:</span><span id="res-birth"></span></div>
+                    <div class="res-row"><strong>Gender</strong><span>:</span><span id="res-gender"></span></div>
+                    <div class="res-row"><strong>Message</strong><span>:</span><span id="res-msg"></span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Metalika Gunena</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

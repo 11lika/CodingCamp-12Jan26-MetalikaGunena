@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #fff;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+.deskripsi {
+    margin-left: -530px;
+}
+
+.section-padding {
+    padding: 50px 5%;
+    border-top: 1px solid #ccc;
+}
+
+/* Navbar Responsif */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-banner {
+    background: #eee;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+/* HQ Section */
+.hq-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.hq-item {
+    text-align: center;
+}
+
+/* Message Us & Lang Button */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.lang-switcher button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Titik Dua Sejajar (Result Box) */
+.result-box {
+    flex: 1;
+    border: 1px solid #000;
+    padding: 20px;
+    background: #fdfdfd;
+}
+
+.res-row {
+    display: grid;
+    grid-template-columns: 120px 20px 1fr;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .form-wrapper,
+    .hq-container {
+        flex-direction: column;
+    }
+
+    .hero-banner {
+        height: 180px;
+    }
+
+    .res-row {
+        grid-template-columns: 100px 15px 1fr;
+        font-size: 14px;
+    }
+}
