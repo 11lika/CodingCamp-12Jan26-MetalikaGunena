@@ -80,12 +80,25 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.circle {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #000;
+.circle1 iframe {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin: 0 auto 10px;
+    border: none;
+}
+
+.circle2 iframe {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+}
+
+.circle3 iframe {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
 }
 
 .hq-item {
@@ -154,8 +167,10 @@ footer {
 @media screen and (max-width: 768px) {
     nav {
         display: flex;
-        flex-direction: row; /* Tetap satu baris horizontal */
-        justify-content: space-between; /* Logo kiri, Menu kanan */
+        flex-direction: row;
+        /* Tetap satu baris horizontal */
+        justify-content: space-between;
+        /* Logo kiri, Menu kanan */
         align-items: center;
         padding: 10px 15px;
         background: #fff;
@@ -170,7 +185,8 @@ footer {
 
     .logo {
         height: 30px;
-        width: 30px; /* Saya samakan agar tetap bulat sempurna */
+        width: 30px;
+        /* Saya samakan agar tetap bulat sempurna */
         margin-bottom: 0;
         flex-shrink: 0;
     }
@@ -187,7 +203,8 @@ footer {
     }
 
     .deskripsi p {
-        display: none; /* Sembunyikan teks panjang agar tidak sesak */
+        display: none;
+        /* Sembunyikan teks panjang agar tidak sesak */
     }
 
     /* Bagian Menu Navigasi */
@@ -219,7 +236,7 @@ footer {
     /* Headquarter - Membuat lingkaran tumpuk atau berjejer rapi */
     .hq-container {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
         margin-top: 20px;
@@ -228,16 +245,17 @@ footer {
     /* Message Us - Membuat Hasil berada di bawah Form */
     .form-wrapper {
         display: flex;
-        flex-direction: column; /* Ini yang membuat hasil jatuh ke bawah */
+        flex-direction: column;
+        /* Ini yang membuat hasil jatuh ke bawah */
         gap: 20px;
         width: 100%;
         padding: 10px;
     }
 
     /* Memastikan Form dan Kotak Hasil selebar layar */
-    .form-content, 
-    .summary-box, 
-    #result-container { 
+    .form-content,
+    .summary-box,
+    #result-container {
         width: 100% !important;
         margin-left: 0 !important;
     }
